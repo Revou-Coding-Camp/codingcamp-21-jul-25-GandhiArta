@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <div class="stats">
+                <span class="total-tasks">Total Tasks: 2</span>
+                <span class="completed-tasks">Completed: 2</span>
+                <span class="pending-tasks">Pending: 0</span>
+                <span class="progress">Progress: 100%</span>
+            </div>
+        </header>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <input type="text" id="new-task" placeholder="Add a todo...">
+            <input type="date" id="due-date">
+            <button id="add-btn">+</button>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="search-filter">
+            <input type="text" id="search-tasks" placeholder="Search tasks...">
+            <select id="filter-select">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+            <button id="delete-all-btn">Delete All</button>
+        </section>
+
+        <!-- Task List Section -->
+        <section class="task-list">
+            <h2>Task</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tasks will be dynamically added here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
